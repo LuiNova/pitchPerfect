@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Record Sounds View Controller-->
+        <!--Pitch Perfect-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
@@ -58,7 +58,7 @@
                             <constraint firstItem="iDE-lk-PKW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zg8-wF-6bs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="caT-sV-KU2"/>
+                    <navigationItem key="navigationItem" title="Pitch Perfect" id="caT-sV-KU2"/>
                     <connections>
                         <outlet property="recordButton" destination="iDE-lk-PKW" id="Bvm-RO-RzE"/>
                         <outlet property="recordingLabel" destination="SSV-el-4mH" id="IQ1-0W-FnK"/>
@@ -70,7 +70,7 @@
             </objects>
             <point key="canvasLocation" x="1076" y="137.18140929535232"/>
         </scene>
-        <!--Play Sounds View Controller-->
+        <!--Effects-->
         <scene sceneID="wtN-Li-o9q">
             <objects>
                 <viewController id="Lih-5e-x2x" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
@@ -171,6 +171,7 @@
                             <constraint firstItem="JFS-fC-Re8" firstAttribute="leading" secondItem="xYB-Ux-Mjk" secondAttribute="leadingMargin" id="sNU-3x-sOl"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Effects" id="G8b-7z-fQ8"/>
                     <connections>
                         <outlet property="echoButton" destination="lXr-pI-imZ" id="TwV-BD-fg7"/>
                         <outlet property="fastButton" destination="zLH-dU-iBb" id="hdC-aB-cZf"/>
@@ -190,9 +191,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XDf-Zj-ALD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XXJ-0u-rkQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XXJ-0u-rkQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1333333333" green="0.79607843140000001" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
