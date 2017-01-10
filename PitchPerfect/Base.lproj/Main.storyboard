@@ -31,13 +31,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSV-el-4mH">
-                                <rect key="frame" x="133.5" y="421" width="107" height="21"/>
+                                <rect key="frame" x="133.5" y="411" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gir-vH-ehL">
-                                <rect key="frame" x="155" y="452" width="64" height="64"/>
+                                <rect key="frame" x="155" y="432" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="jp8-nv-XNj"/>
                                     <constraint firstAttribute="width" constant="64" id="mMO-Me-LuY"/>
@@ -50,11 +50,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SSV-el-4mH" firstAttribute="top" secondItem="iDE-lk-PKW" secondAttribute="bottom" constant="10" id="BaR-HA-pc1"/>
+                            <constraint firstItem="SSV-el-4mH" firstAttribute="top" secondItem="iDE-lk-PKW" secondAttribute="bottom" id="BaR-HA-pc1"/>
                             <constraint firstItem="Gir-vH-ehL" firstAttribute="centerX" secondItem="SSV-el-4mH" secondAttribute="centerX" id="LdW-DJ-vV1"/>
                             <constraint firstItem="iDE-lk-PKW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZV2-iw-Zjl"/>
                             <constraint firstItem="SSV-el-4mH" firstAttribute="centerX" secondItem="iDE-lk-PKW" secondAttribute="centerX" id="cwh-1G-IEo"/>
-                            <constraint firstItem="Gir-vH-ehL" firstAttribute="top" secondItem="SSV-el-4mH" secondAttribute="bottom" constant="10" id="yBP-yw-Qvy"/>
+                            <constraint firstItem="Gir-vH-ehL" firstAttribute="top" secondItem="SSV-el-4mH" secondAttribute="bottom" id="yBP-yw-Qvy"/>
                             <constraint firstItem="iDE-lk-PKW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zg8-wF-6bs"/>
                         </constraints>
                     </view>
@@ -176,7 +176,12 @@
                         <outlet property="echoButton" destination="lXr-pI-imZ" id="TwV-BD-fg7"/>
                         <outlet property="fastButton" destination="zLH-dU-iBb" id="hdC-aB-cZf"/>
                         <outlet property="highPitchButton" destination="Q7Q-WI-Hpe" id="4GA-Gg-C1m"/>
+                        <outlet property="innerStackView1" destination="p5d-py-wkD" id="df2-nn-Z8z"/>
+                        <outlet property="innerStackView2" destination="eY2-je-Xhf" id="xef-Rp-s6g"/>
+                        <outlet property="innerStackView3" destination="1xa-Sd-V3l" id="Vlw-sy-C19"/>
+                        <outlet property="innerStackView4" destination="jzC-hB-gf6" id="fOh-bq-Eba"/>
                         <outlet property="lowPitchButton" destination="40V-YL-7nu" id="e47-0F-3kp"/>
+                        <outlet property="outerStackView" destination="JFS-fC-Re8" id="7mY-9r-tgx"/>
                         <outlet property="reverbButton" destination="1Q9-hd-P7u" id="jdf-Wr-FlN"/>
                         <outlet property="slowButton" destination="QVJ-N4-7Hf" id="Vel-3A-ade"/>
                         <outlet property="stopButton" destination="bxS-tc-W1q" id="nA7-Pl-2hs"/>
@@ -191,7 +196,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XDf-Zj-ALD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XXJ-0u-rkQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XXJ-0u-rkQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.1333333333" green="0.79607843140000001" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
